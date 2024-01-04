@@ -13,7 +13,14 @@ h2{
     margin: 0.6rem;
 }
 
-h3{
+header h1{
+    font-family: 'League Spartan';
+    color:black;
+    text-align: center;
+    margin: 0.35rem;
+}
+
+header h3{
     color:orange;
     text-align: center;
     margin: 0.35rem;
@@ -23,30 +30,35 @@ html{
     background-color: orange;
 }
 
-header{
-    display:flex;
-    justify-content: space-between;
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     background-color: #Fff;
-    padding: 10px 20px;
+    padding-bottom: -200px;
+    padding: 10px 10px;
     margin-bottom: 1.7rem;
     box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.274);
 }
 
-nav{
-    padding-top: 0.6rem;
-    margin-left: 34.8rem;
-    text-align: center;
+.logo {
+    display: inline-block;
+    position: relative; /* Posizione fissa */
+    right: -45%; /* Distanza dalla destra */
+    top: -22px; /* Posiziona al centro in verticale */
+    transform: translateY(-50%); /* Regola per centrare verticalmente */
 }
 
-.logo{
-    display: inline-block;
-    width: 6.5rem;
-    height: 3.7rem;
+.logo img {
+    width: 50%;
+    height: auto;
 }
 
 .gallery{
     width: 100%;
-    height: 29rem;
+    height: 32rem;
 
     position: relative;
     display: flex;
@@ -68,14 +80,15 @@ section{
     background-color: #Fff;
     font-size: 1.3rem;
     margin: 0.7rem;
-    margin-left: 29.7%;
+    margin-left: 35%;
     border-radius: 0.5rem;
-    padding: 0.25rem;
+    padding: 1.5rem;
     width: 560px;
 }
 
 .lista{
     list-style: none;
+    margin-bottom: 25px;
 }
 
 .menu{
@@ -95,7 +108,7 @@ table{
     color: #Fff;
     transition: all 0.3s ease;
     cursor: pointer;
-    margin-top: 0.8rem;
+    margin-top: 1rem;
 }
 
 .button:hover{
@@ -110,3 +123,65 @@ footer{
     font-size: 1.6rem;
     margin-top: 1.4rem;
 }
+
+.tacos{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.tacos2{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.items{
+    margin-left: 60px;
+}
+
+.pastor{
+    margin-bottom: 10px;
+}
+
+.canasta{
+    margin-bottom: 10px;
+    margin-left: 19px;
+}
+
+.carnitas{
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.chorizo{
+    margin-bottom: 10px;
+    margin-left: 11px;
+}
+
+.chuleta{
+    margin-bottom: 20px;
+    margin-left: 11px;
+}
+
+input[id="name"], select {
+    width: 30%;
+    text-align: center;
+    padding: 12px 6px;
+    margin: 8px 0;
+    font-size: medium;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=text] {
+    border: none;
+    text-align: center;
+    border-bottom: 2px solid black;
+  }
+
+  input[type=tel] {
+    border: none;
+    text-align: center;
+    border-bottom: 2px solid black;
+  }

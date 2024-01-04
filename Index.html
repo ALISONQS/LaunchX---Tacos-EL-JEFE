@@ -11,13 +11,12 @@
    
     <!---Header de la Pagina--->
     <header>
-        <nav>
-            <h1>Tacos EL JEFE</h1>
-            <h3> Los tacos más perrones</h3>
-        </nav>
-        <img src="./Imagenes/Logo.png" class="logo" alt="Logo tacos el jefe"/>
+        <h1>Tacos EL JEFE</h1>
+        <h3>Los tacos más perrones</h3>
+        <div class="logo">
+            <img src="./Imagenes/Logo.png" alt="Logo tacos el jefe"/>
+        </div>
     </header>
-
     <!--------- Menu ---------->
     <div class="gallery">
         <img src="./Imagenes/shrimp tacos.jpg" alt="">
@@ -99,49 +98,58 @@
         <h3>Haz tu pedido aquí</h3>
 
         <form action="">
-            <p>¿De qué taquería quieres?</p>
+            <div class="tacos2">
+                <p>¿De qué taquería quieres?</p>
+            </div>
             <select>
                 <option value="Norte">Norte</option>
                 <option value="Centro">Centro</option>
                 <option value="Sur">Sur</option>
             </select>
+            <div class="tacos">
+                <p>¿De qué tacos quieres?</p> 
+            </div>
+            <div class="items">
+                <div class="pastor">
+                    <input type="checkbox" id="Pastor" name="Pastor" value="Pastor">
+                    <label for="Pastor">Pastor</label>
+                    <input type="number" id="PatorNumber" name="PatorNumber" placeholder="¿Cuántos?">
+                </div>
+                <div class="canasta">
+                    <input type="checkbox" id="Canasta" name="Canasta" value="Canasta">
+                    <label for="Canasta">Canasta</label>
+                    <input type="number" id="CanastaNumber" name="CanastaNumber" placeholder="¿Cuántos?">
+                </div>
+                <div class="carnitas">
+                    <input type="checkbox" id="Carnitas" name="Carnitas" value="Carnitas">
+                    <label for="Carnitas">Carnitas</label>
+                    <input type="number" id="CarnitasNumber" name="CarnitasNumber" placeholder="¿Cuántos?">
+                </div>
+                <div class="chorizo">
+                    <input type="checkbox" id="Chorizo" name="Chorizo" value="Chorizo">
+                    <label for="Chorizo">Chorizo</label>
+                    <input type="number" id="ChorizoNumber" name="ChorizoNumber" placeholder="¿Cuántos?">
+                </div>
+                <div class="chuleta">
+                    <input type="checkbox" id="Chuleta" name="Chuleta" value="Chuleta">
+                    <label for="Chuleta">Chuleta</label>
+                    <input type="number" id="ChuletaNumber" name="ChuletaNumber" placeholder="¿Cuántos?">
+                </div>
+            </div>
+                <label for="Nombre">Nombre:</label><br>
+                <input type="text" id="Nombre" name="Nombre" placeholder="¿Cómo te llamas">
+                <br><br>
 
-            <p>¿De qué tacos quieres?</p>
-            <input type="checkbox" id="Pastor" name="Pastor" value="Pastor">
-            <label for="Pastor">Pastor</label>
-            <input type="number" id="PatorNumber" name="PatorNumber" placeholder="¿Cuántos?">
-            <br>
-            <input type="checkbox" id="Canasta" name="Canasta" value="Canasta">
-            <label for="Canasta">Canasta</label>
-            <input type="number" id="CanastaNumber" name="CanastaNumber" placeholder="¿Cuántos?">
-            <br>
-            <input type="checkbox" id="Carnitas" name="Carnitas" value="Carnitas">
-            <label for="Carnitas">Carnitas</label>
-            <input type="number" id="CarnitasNumber" name="CarnitasNumber" placeholder="¿Cuántos?">
-            <br>
-            <input type="checkbox" id="Chorizo" name="Chorizo" value="Chorizo">
-            <label for="Chorizo">Chorizo</label>
-            <input type="number" id="ChorizoNumber" name="ChorizoNumber" placeholder="¿Cuántos?">
-            <br>
-            <input type="checkbox" id="Chuleta" name="Chuleta" value="Chuleta">
-            <label for="Chuleta">Chuleta</label>
-            <input type="number" id="ChuletaNumber" name="ChuletaNumber" placeholder="¿Cuántos?">
-            <br><br>
+                <label for="Teléfono">Teléfono:</label><br>
+                <input type="tel" id="Teléfono" name="Teléfono" placeholder="¿Tu teléfono">
+                <br><br>
 
-            <label for="Nombre">Nombre:</label><br>
-            <input type="text" id="Nombre" name="Nombre" placeholder="¿Cómo te llamas">
-            <br><br>
+                <label for="Dirección">Dirección:</label><br>
+                <input type="text" id="Dirección" name="Dirección" placeholder="¿Á donde lo mandamos">
+                <br>
 
-            <label for="Teléfono">Teléfono:</label><br>
-            <input type="tel" id="Teléfono" name="Teléfono" placeholder="¿Tu teléfono">
-            <br><br>
-
-            <label for="Dirección">Dirección:</label><br>
-            <input type="text" id="Dirección" name="Dirección" placeholder="¿Á donde lo mandamos">
-            <br>
-
-            <button type="submit" class="button">Enviar pedido</button>
-            <br><br>
+                <button type="submit" class="button">Enviar pedido</button>
+                <br><br>
         </form>
     </section>
 
